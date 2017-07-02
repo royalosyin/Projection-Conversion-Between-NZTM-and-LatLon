@@ -1,10 +1,9 @@
 # Projection-Conversion-Between-NZTM-and-LatLon
 Fortran 90 module for transforming the projections between NZTM and LatLon. It is simply translated from C source code from LINZ at http://www.linz.govt.nz/geodetic/software-downloads#nztm2000
 
-Only provide two public functions
-public nztm_geod, geod_nztm 
+Only provide two public functions of nztm_geod and geod_nztm 
 
-nztm_geod                                                                                                                                       !*   Routine to convert from Tranverse Mercator to latitude and longitude. */
+nztm_geod                                                                                                                                   !*   Routine to convert from Tranverse Mercator to latitude and longitude. */
     !*   Method based on Redfearn's formulation as expressed in GDA technical  */
     !*   manual at http://www.anzlic.org.au/icsm/gdatm/index.html  
     
@@ -34,7 +33,7 @@ Program Main_NZTM
     call geod_nztm( lat, lon, north1, east1 ) 
     write(*, *) 'The east1/nonth1 is: ', east1, north1
     
-    write(*,*) 'Difference:           ', int( (east1-east)*1000) /1000.0,  int( (north1-north)*1000) /1000.0;
+    write(*,*) 'Difference: ', int( (east1-east)*1000) /1000.0,  int( (north1-north)*1000) /1000.0;
     
     write(*,*) 'Done'
 End Program 
