@@ -4,11 +4,11 @@ Fortran 90 module for transforming the projections between NZTM and LatLon. It i
 Only provide two public functions
 public nztm_geod, geod_nztm 
 
-tm_geod                                                                                                                                       !*   Routine to convert from Tranverse Mercator to latitude and longitude. */
+nztm_geod                                                                                                                                       !*   Routine to convert from Tranverse Mercator to latitude and longitude. */
     !*   Method based on Redfearn's formulation as expressed in GDA technical  */
     !*   manual at http://www.anzlic.org.au/icsm/gdatm/index.html  
     
-geod_tm
+geod_nztm
     !*   Routine to convert from latitude and longitude to Transverse Mercator.*/
     !*   Method based on Redfearn's formulation as expressed in GDA technical  */
     !*   manual at http://www.anzlic.org.au/icsm/gdatm/index.html              */
